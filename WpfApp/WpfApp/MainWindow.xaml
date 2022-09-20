@@ -6,7 +6,11 @@
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+    <Grid Background="DarkGray">
+        <TextBlock HorizontalAlignment="Center" Width="150" Height="15" Text="Fibonacci numbers" Padding="20 0 " Margin="0 -140 0 0" FontFamily="Times New Roman Bold Italic"></TextBlock>
+        <TextBox Name="TextBlockFib" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap" Width="200" Height="60" Background="White"></TextBox>
+        <Button Click="StartButton_Click" Width="60" Height="20" Content="Start" Margin="-140 100 0 0" Background="White" Cursor="Hand"></Button>
+        <Button Click="StopButton_Click" Width="60" Height="20" Content="Stop" Margin="140 100 0 0" Background="White" Cursor="Hand"></Button>
+        <Button Click="ContinueButton_Click" Width="60" Height="20" Content="Continue" Margin="0 100 0 0" Background="White" Cursor="Hand"></Button>
     </Grid>
 </Window>
